@@ -4,11 +4,13 @@ import * as Minesweeper from '../minesweeper.js';
 
 export class Game extends React.Component{
   constructor(props){
+    // debugger
     super(props);
     const board = new Minesweeper.Board(9, 9)
     this.state = {
       board: board
     }
+    debugger
     this.updateGame = this.updateGame.bind(this);
   }
 
