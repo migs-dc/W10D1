@@ -1,21 +1,26 @@
 import React from 'react';
 import Board from 'board';
+import Tile from 'tile';
 
 export class Game extends React.Component{
   constructor(props){
     super(props);
+    const board = new Minesweeper.Board(9, 9)
     this.state = {
-      board: new Minesweeper.Board(9, 9)
+      board: board
     }
+    this.updateGame = this.updateGame.bind(this);
   }
 
-  updateGame(){
-
+  updateGame(tile){
+    this.setState({board: this.state.board})
   }
 
   render(){
     return(
-      <h1>Board</h1>
+      <div>
+        <Board board={this.state.board} updateGame={this.updateGame}/>
+      </div>
     )
   }
 }
