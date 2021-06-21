@@ -1,24 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as Minesweeper from '../minesweeper'; // may not want to import here..?
-import Game from 'game';
+import Game from './game';
 
-
-
-function Root() {
-  return (
-      <>
-          <Game/>
-          <Board/>
-          <Tile/>
-      </>
-  )
-}
+// function Root() {
+//   return (
+//       <>
+//           <Game/>
+//       </>
+//   )
+// }
 
 document.addEventListener("DOMContentLoaded", () =>{
-  const root = document.getElementbyId("root");
-  ReactDOM.render(<Root/>, root);
+  const root = document.getElementById("root");
+  // ReactDOM.render(<Root/>, root);
+  ReactDOM.render(<Game/>, root);
 })
-
-// why is 19-21 a function
 

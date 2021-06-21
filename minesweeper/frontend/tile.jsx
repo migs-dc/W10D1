@@ -3,8 +3,14 @@ import React from 'react';
 
 export class Tile extends React.Component {
   constructor(props){
-    super(props);
+    super(props); 
+  }
 
-    
+  render(){
+    return(
+      <div>T</div>
+    )
   }
 }
+
+export default Tile;

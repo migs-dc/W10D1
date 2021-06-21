@@ -1,6 +1,6 @@
 import React from 'react';
-import Board from 'board';
-import Tile from 'tile';
+import Board from './board';
+import * as Minesweeper from '../minesweeper.js';
 
 export class Game extends React.Component{
   constructor(props){
@@ -24,3 +24,5 @@ export class Game extends React.Component{
     )
   }
 }
+
+export default Game;

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Tile from './tile';
 
 export class Board extends React.Component {
   constructor(props){
@@ -17,10 +17,13 @@ export class Board extends React.Component {
     const updateGame = this.props.updateGame 
 
     return(
-      <h1>Board</h1>
+      // <h1>Board</h1>
+      <Tile />
     )
   }
 
   
 }
 
+
+export default Board;
