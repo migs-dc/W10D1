@@ -10,7 +10,7 @@ export class Game extends React.Component{
     this.state = {
       board: board
     }
-    debugger
+    // debugger
     this.updateGame = this.updateGame.bind(this);
   }
 

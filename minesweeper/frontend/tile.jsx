@@ -7,11 +7,12 @@ export class Tile extends React.Component {
 
   render(){
     const tile = this.props.tile;
-
+    let content;
+    (tile.explored) ? content = tile.adjacentBombCount() : content = "T";
 
     return(
-      // <div>T</div>
-      if 
+      <div>{tile.explored}</div> 
+      // <div>T</div> 
     )
   }
 }
