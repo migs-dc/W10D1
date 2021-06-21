@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as Minesweeper from '../minesweeper'; // may not want to import here..?
-import Game from './game';
+import Game from 'game';
 
 
 
@@ -20,4 +20,5 @@ document.addEventListener("DOMContentLoaded", () =>{
   ReactDOM.render(<Root/>, root);
 })
 
+// why is 19-21 a function
 

@@ -17,7 +17,7 @@ export class Board extends React.Component {
     const updateGame = this.props.updateGame 
 
     return(
-      
+      <h1>Board</h1>
     )
   }
 
